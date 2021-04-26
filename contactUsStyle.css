@@ -1,0 +1,134 @@
+.return-homepage
+{
+    font-size: 3em;
+    font-family: 'Lobster', monospace;
+    background-color: rgba(249, 207, 143, 0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.3em 1em;
+}
+body{
+    background : linear-gradient(45deg, #C70039, #D7663B);
+}
+.container{
+    padding: 0.3em;
+}
+.main
+{
+    padding: 0.3em 1em;
+}
+.contact-title
+{
+    padding: 0.3em 0.3em;
+    text-align: center;
+}
+.FAQ
+{
+    padding: 0.3em 0.3em;
+    text-align: center;
+}
+.DM
+{
+    padding: 0.3em 0.3em;
+    text-align: center;
+}
+.another-contact-ways
+{
+    padding: 0.3em 0.3em;
+    text-align: center;
+}
+.FAQ-title
+{
+    color: rgb(252, 252, 252);
+}
+a:link {color: #000000;
+    text-decoration: none;
+}
+.FAQ-left{
+    padding: 0.3em 0.3em;
+}
+.FAQ-mid{
+    padding: 0.3em 0.3em;
+}
+.FAQ-right{
+    padding: 0.3em 0.3em;
+}
+.center-align
+{
+    text-align: center;
+}
+.Address
+{
+    background-color:rgb(120, 190, 231);
+}
+.Email
+{
+    background-color:rgb(77, 175, 231);
+}
+.Tnumber
+{
+    background-color:rgb(23, 150, 223);
+}
+.FAQ,.another-contact-ways,.Address,.Email, .Tnumber, .FAQ-left, .FAQ-mid, .FAQ-right
+{
+    box-sizing: border-box;
+}
+/* 
+    Reponsive
+*/
+/* Tablet */
+@media screen and (min-width: 600px) {
+    .main:before, .main:after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .Address
+    {
+        width:30%;
+        float: left;
+        margin-right:1.5%
+    }
+    .Email
+    {
+        width:30%;
+        float: left;
+        margin-left: 3.5%;
+    }   
+    .Tnumber
+    {   
+        width:30%;
+        float: right;
+        margin-left:1.5%
+    }
+    .FAQ-left
+    {
+        width:31%;
+        float: left;
+        margin-right:1.5%
+    }
+    .FAQ-mid
+    {
+        width:31%;
+        float: left;
+        margin-left: 2%;
+    }
+    .FAQ-right
+    {
+        width:31%;
+        float: right;
+        margin-left:1.5%
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        max-width: 1280px;
+        margin : 0 auto;
+    }
+}

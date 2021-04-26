@@ -1,0 +1,60 @@
+body{
+    font-family: monospace;
+    color: black;
+    font-weight: Bold;
+    margin: 0;
+}
+.header
+{
+    background: black;
+    color: white;
+    padding: 0.3em 1em;
+}
+.content
+{
+    background: aquamarine;
+    padding: 0.3em 1em;
+    margin-bottom: 1em;
+}
+.sidebar
+{
+    background: burlywood;
+    padding: 0.3em 1em;
+}
+.content, .sidebar
+{
+    box-sizing: border-box;
+}
+/* 
+    Reponsive
+*/
+/* tablet */
+@media screen and (min-width: 600px) {
+    .main:before, .main:after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .content{
+        min-height:300px ;
+        width:48.5%;
+        float: left;
+        margin-right:1.5%
+    }
+    .sidebar{
+        min-height:300px ;
+        width:48.5%;
+        float: right;
+    }
+}
+/* desktop */
+@media screen and (min-width: 800px) {
+    .container{
+        max-width: 900px;
+        margin : 0 auto;
+    }
+}
