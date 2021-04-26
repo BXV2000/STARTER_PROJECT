@@ -256,6 +256,7 @@ img{
     font-weight:  700;
     color: #fff
 }
+/* Tuy chinh dong wanna se more? */
 
 .main_btn{
     font-size: 1rem;
@@ -270,6 +271,7 @@ img{
     transition: all 0.3s ;
     outline: none;
 }
+
 
 .main_btn a{
     position: relative;
