@@ -1,23 +1,15 @@
 .return-homepage
 {
+    font-size: 3em;
     font-family: 'Lobster', monospace;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0.3em 0.3em;
-}
-h1{
-    font-size: 2em;
     background-color: rgba(249, 207, 143, 0.5);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 25px;
-}
-h1:hover{
-   animation-name: HomepageAnim;
-   animation-duration: 3s;
-   animation-fill-mode: forwards;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.3em 1em;
 }
 body{
-    font-family: Lobster;
     background : linear-gradient(45deg, #C70039, #D7663B);
 }
 .container{
@@ -27,56 +19,41 @@ body{
 {
     padding: 0.3em 1em;
 }
-/* a:link{
-    background-color: rgba(0, 0, 0, 0.5);
-} */
 .contact-title
 {
     padding: 0.3em 0.3em;
     text-align: center;
-    font-size: 35px;
-    color: rgb(243, 175, 155);
 }
 .FAQ
 {
     padding: 0.3em 0.3em;
     text-align: center;
-    background : linear-gradient(45deg, #C70039, #D7663B);
-    border-radius: 25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .DM
 {
     padding: 0.3em 0.3em;
     text-align: center;
-    min-height: 320px;
 }
 .another-contact-ways
 {
     padding: 0.3em 0.3em;
     text-align: center;
-    border-radius: 25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .FAQ-title
 {
     color: rgb(252, 252, 252);
-    font-size: 25px;
+}
+a:link {color: #000000;
+    text-decoration: none;
 }
 .FAQ-left{
-    font-size: 20px;
-    font-weight: bold;
-    min-height: 80px;
+    padding: 0.3em 0.3em;
 }
 .FAQ-mid{
-    font-size: 20px;
-    font-weight: bold;
-    min-height: 80px;
+    padding: 0.3em 0.3em;
 }
 .FAQ-right{
-    font-size: 20px;
-    font-weight: bold;
-    min-height: 80px;
+    padding: 0.3em 0.3em;
 }
 .center-align
 {
@@ -84,15 +61,15 @@ body{
 }
 .Address
 {
-    color: aliceblue;
+    background-color:rgb(120, 190, 231);
 }
 .Email
 {
-    color: aliceblue;
+    background-color:rgb(77, 175, 231);
 }
 .Tnumber
 {
-    color: aliceblue;
+    background-color:rgb(23, 150, 223);
 }
 .FAQ,.another-contact-ways,.Address,.Email, .Tnumber, .FAQ-left, .FAQ-mid, .FAQ-right
 {
@@ -116,7 +93,7 @@ body{
     {
         width:30%;
         float: left;
-        margin-right: 1.5%;
+        margin-right:1.5%
     }
     .Email
     {
@@ -128,107 +105,31 @@ body{
     {   
         width:30%;
         float: right;
-        margin-left: 1.5%;
+        margin-left:1.5%
     }
     .FAQ-left
     {
         width:31%;
         float: left;
-        margin-right:1.5%;
-
-        padding: 0.3em 0.3em;
-        background : linear-gradient(45deg, #C70039, #D7663B);
-        border-radius: 25px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-        min-height: 120px;
+        margin-right:1.5%
     }
     .FAQ-mid
     {
         width:31%;
         float: left;
         margin-left: 2%;
-
-        padding: 0.3em 0.3em;
-        background : linear-gradient(45deg, #C70039, #D7663B);
-        border-radius: 25px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-        min-height: 120px;
     }
     .FAQ-right
     {
         width:31%;
         float: right;
-        margin-left:1.5%;
-
-        padding: 0.3em 0.3em;
-        background : linear-gradient(45deg, #C70039, #D7663B);
-        border-radius: 25px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-        min-height: 120px;
-    }
-    .DM
-    {
-    padding: 13em 0.3em 0.3em 0.3em;
-    }
-    .FAQ
-    {
-        background : none;
-        box-shadow: none;
-    }
-    .another-contact-ways
-    {
-    padding: 0.3em 0.3em;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    min-height: 100px;
+        margin-left:1.5%
     }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
     .container{
-        max-width: 1000px;
+        max-width: 1280px;
         margin : 0 auto;
         /* hello muc */
-    }
-}
-img{
-    transform: rotate(5deg);
-    animation-name: MessageAnim;
-    animation-duration: 1S;
-    animation-iteration-count: infinite;
-}
-
-/* 
-    Animation
-*/
-@keyframes MessageAnim {
-    25%
-    {
-        width: 220px;
-    }
-   50%
-   {
-    transform: rotate(-5deg);
-    width: 200px;
-   }
-   75%
-   {
-       width: 220px;
-   }
-   100%
-   {
-    transform: rotate(5deg);
-    width: 200px;
-   }
-}
-@keyframes HomepageAnim {
-    100%
-    {
-        background-color: rgb(255, 218, 170);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        border-radius: 25px;
     }
 }
