@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans',sans-serif;
-}
+} 
+/* Set font cho page */
 
 .navbar{
     background: #131313;
@@ -16,6 +17,7 @@
     top: 0;
     z-index: 999; 
 }
+/* Nen den cho thanh navigator */
 
 .navbar_container{
     display: flex;
@@ -27,12 +29,15 @@
     margin: 0 auto;
     padding: 0 50px;
 }
+/* Gioi han noi dung trong navigation bar  */
+
 
 img{
     border-radius: 50%;
     align-items: center;
     cursor: pointer;  
 }
+/* Tuy chinh logo page */
 
 .navbar_menu{
     display: flex;
@@ -40,9 +45,13 @@ img{
     list-style: none;
     text-align: center;
 }
+/* Thiet lap vi tri cac phan trong navigation bar */
+
 .navbar_item{
     height: 80px;
 }
+/* Chieu cao cac phan trong giao dien navigation bar*/
+
 .navbar_link{
     color: #fff;
     display: flex;
@@ -52,6 +61,7 @@ img{
     padding: 0 1rem;
     height: 100%;
 }
+/* Tuy chỉnh text cac phan trong navigation bar */
 
 .navbar_btn{
     display: flex;
@@ -60,6 +70,7 @@ img{
     padding: 0 1rem;
     width: 100%;
 }
+/* Tuy chinh vi tri nut tren navigation bar */
 
 .button{
     display: flex;
@@ -75,17 +86,21 @@ img{
     background: #f77052;
     color: #fff;
 }
+/* Tuy chinh format nut tren navigation bar */
 
 .button:hover{
     background: #4837ff;
     transition: all 0.3s ease; 
 }
+/* Hieu ung khi dua chuot vao nut */
 
 .navbar_link:hover{
     color: #f77062;
     transition: all 0.3s ease;
 }
+/* Hieu ung khi dua chuot vao cac phan tren navigation bar */
 
+/* Thiet lap cac phan cho giao dien di dong */
 @media screen and (max-width: 960px){
     .navbar_container {
         display: flex;
@@ -96,6 +111,7 @@ img{
         max-width: 1300px;
         padding: 0;
     }
+    /* Can chinh vi tri navigation bar */
 
     .navbar_menu{
         display: grid;
@@ -110,8 +126,9 @@ img{
         background: #131313;
         z-index: -1;
     }
+    /* Thiet lap menu drop cho navigation bar */
 
-    .navbar_menu.active{
+     .navbar_menu.active{
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -119,7 +136,9 @@ img{
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
-    }
+    } 
+    /* Set trang thai kich hoat cho menu drop */
+
 
     .navbar_toggle .bar{
         width: 25px;
@@ -128,10 +147,12 @@ img{
         transition: all 0.3s ease;
         background: #fff;
     }
+    /* Set button cho menu drop */
 
     .navbar_item{
         width: 100%;
     }
+    /* Fit cac phan trong menu drop */
 
     .navbar_link{
         text-align: center;
@@ -139,6 +160,7 @@ img{
         width: 100%;
         display: table;
     }
+    /* Chinh cac lien ket o can phan */
 
     #mobile-menu{
         position: absolute;
@@ -146,10 +168,12 @@ img{
         right: 5%;
         transform: : translate(5%,20%);
     }
+    /* Set vi tri menu mobile phu hop  */
 
     .navbar_btn{
         padding-bottom: 2rem ;
     }
+    /* Tuy chinh nut cua phan trong menu drop */
 
     .button{
         display: flex;
@@ -159,11 +183,13 @@ img{
         height: 80px;
         margin: 0;
     }
+    /* Tuy chinh format nut */
 
     .navbar_toggle .bar{
         display: block;
         cursor: pointer;
     }
+    /* Tuy chinh kieu hien thi va tuong tac cua nut drop menu */
 
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
@@ -176,11 +202,14 @@ img{
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    /* Chinh hieu ung khi nhap vao nut menu drop */
 }
 
 .main{
     background-color: #141414;   
 }
+/* Background phan main  */
 
 .main_container{
     display: grid;
@@ -195,6 +224,7 @@ img{
     max-width:  1300px;
     padding: 0 50px;
 }
+/* Background xung quanh main */
 
 .main_content h1{
     font-size: 4rem;
@@ -206,6 +236,7 @@ img{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+/* Tuy chinh dong team alpha */
 
 .main_content h2{
     font-size: 4rem;
@@ -217,6 +248,7 @@ img{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+/* Tuy chinh dong world class clown */
 
 .main_content p{
     margin-top: 1rem;
@@ -224,6 +256,7 @@ img{
     font-weight:  700;
     color: #fff
 }
+/* Tuy chinh dong wanna se more? */
 
 .main_btn{
     font-size: 1rem;
@@ -238,6 +271,7 @@ img{
     transition: all 0.3s ;
     outline: none;
 }
+
 
 .main_btn a{
     position: relative;
@@ -273,7 +307,10 @@ img{
 #main_img{
     height: 80%;
     width: 80%;
+    border-radius: 0%;
+    background-color: transparent;
 }
+/* Tuy chinh icon main page */
 
 /*Mobile*/
 @media screen and (max-width: 768px){
@@ -305,6 +342,11 @@ img{
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+
+    #main_img{
+        display: flex ;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -322,8 +364,88 @@ img{
         font-size: 1.5rem;
     }
 
-    .main_btn{
+    .main_btn {
         padding: 12px 36px;
+
         margin: 2.5rem 0;
+
     }
+    #main_img{
+        display:flex;
+        margin: 0 auto;
+    }
+}
+
+/* Service */
+.service{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.service h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%,#ff8678 0%,#ff8c7f 21%,#f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-size: 100%;
+    margin-bottom:  5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.service_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service_card{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(17,17,17,0.6) 100%),url('/images/owo.png');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.service_card:nth-child(2){
+    
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(17,17,17,0.6) 100%),url('/images/uwu.png');
+}
+
+.service h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.service_card p{
+    position: absolute;
+    top: 400px;
+    left: 30px
+}
+
+.service_card button{
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.service_card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
 }
