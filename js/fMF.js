@@ -6,14 +6,15 @@ function save()
     //console.log(membername,memberinfo);
 //  xu li cho dep
     if(_.isEmpty(membername)){
-        document.getElementById('require-pn').innerHTML = "Phải nhập têm thành viên";
-    }else
-    {
-        document.getElementById('require-pn').className = "green";
-        document.getElementById('require-pn').innerHTML = "OK";
+        document.getElementById('require-pn').innerHTML = "Phải nhập tên thành viên";
+    }
+
+    if(memberinfo.length > 31){
+        memberinfo = "";
+        document.getElementById('require-pni').innerHTML = "Thông tin dưới 30 kí tự";
     }
 //xu li luu
-    if(membername)
+    if(memberinfo)
     {
         //let members = localStorage.getItem('members') ? JSON.parse(localStorage.getItem('members')): [];
 
@@ -47,8 +48,8 @@ function renderMember()
     let tableContent = `
     <tr>
     <td>#</td>
-    <td>Tên thành viên:</td>
-    <td>Thông tin thêm:</td>
+    <td>Tên:</td>
+    <td max-width:50%>Thông tin thêm:</td>
     <td>Tùy chọn:</td>
     </tr>`; 
 
@@ -59,7 +60,7 @@ function renderMember()
         <tr>
         <td>${index}</td>
         <td>${member.membername}</td>
-        <td>${member.memberinfo}</td>
+        <td max-width:50%>${member.memberinfo}</td>
         <td>
             <a onclick = "deleteMember(${id})" href="#">Xóa<a/>
         </td>

@@ -1,4 +1,7 @@
 body{
+    background : linear-gradient(45deg, #C70039, #D7663B);
+    min-height: 50em;
+    font-family: Lobster, monospace;
     padding: 0px;
     margin: 0px;
     }
@@ -6,9 +9,10 @@ body{
     {
     width: 310px;
     border: 5px solid rgb(255, 176, 140);
-    margin: 25px;
+    /* margin: 25px; */
     padding: 10px;
-    float: left;
+    margin: 0 auto;
+    margin-top: 1em;
     }
     div.listmember
     {
@@ -16,12 +20,15 @@ body{
     }
     h2
     {
+    
     padding: 0px;
     margin-top:0px;
     }  
     div.formCreate label{
         width: 150px;
-        float: left;
+        margin: auto;
+        
+        /* float: left; */
     }
     div.formCreate input{
         margin-bottom: 25px;
@@ -36,4 +43,8 @@ body{
     }
     button{
         width: 100px;
+        font-family: Lobster, monospace;
+    }
+    input{
+        font-family: Lobster, monospace;
     }
