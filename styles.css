@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Kumbh Sans',sans-serif;
 } 
-/* Set font cho pafe */
+/* Set font cho page */
 
 .navbar{
     background: #131313;
@@ -307,7 +307,10 @@ img{
 #main_img{
     height: 80%;
     width: 80%;
+    border-radius: 0%;
+    background-color: transparent;
 }
+/* Tuy chinh icon main page */
 
 /*Mobile*/
 @media screen and (max-width: 768px){
@@ -339,6 +342,11 @@ img{
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+
+    #main_img{
+        display: flex ;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -356,8 +364,79 @@ img{
         font-size: 1.5rem;
     }
 
-    .main_btn{
+    .main_btn {
         padding: 12px 36px;
+
         margin: 2.5rem 0;
+
     }
+    #main_img{
+        display:flex;
+        margin: 0 auto;
+    }
+}
+
+/* Service */
+.service{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.service h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%,#ff8678 0%,#ff8c7f 21%,#f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-size: 100%;
+    margin-bottom:  5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.service_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service_card{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(17,17,17,0.6) 100%),url('/images/owo.png');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.service_card:nth-child(2){
+    
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(17,17,17,0.6) 100%),url('/images/owo.png');
+}
+
+.service h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.service_card p{
+    position: absolute;
+    top: 400px;
+    left: 30px
+}
+
+.service_card button{
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
 }
