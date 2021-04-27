@@ -62,7 +62,7 @@ function renderMember()
         <td>${member.membername}</td>
         <td max-width:50%>${member.memberinfo}</td>
         <td>
-            <a onclick = "deleteMember(${id})" href="#">Xóa<a/>
+            <a class = "dbtn" onclick = "deleteMember(${id})" href="#">Xóa<a/>
         </td>
         </tr>`
         })

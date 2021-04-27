@@ -48,3 +48,17 @@ body{
     input{
         font-family: Lobster, monospace;
     }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover.dbtn{
+        text-shadow: #C70039;
+        color: rgb(255, 255, 255);
+    }
+    button:hover{
+        color: rgb(255, 117, 140);
+    }
+    a:hover{
+        color: rgb(255, 117, 140);
+    }
