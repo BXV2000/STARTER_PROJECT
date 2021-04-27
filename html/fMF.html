@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Quản lý thành viên - fakefake
+        </title>
+        <link rel = "stylesheet" href ="../css/fMFstyle.css"/>
+    </head>
+    <body onload = "renderMember()">
+        <div class = "formCreate">
+            <h2>Thông tin thành viên</h2>
+
+            <label>Tên thành viên: </label>
+            <input type = "text" placeholder="Không được để trống" id = "member-name" required/>
+            <span id = "require-pn" class = "red"></span> <!--báo động khi nhập sai-->
+            <br/>
+
+            <label>Thông tin chi tiết: </label>
+            <input type = "text" placeholder="Thông tin thêm" id = "member-info"/>
+            <br/>
+
+            <label>Sụbmít nhé?</label>
+            <button onclick = "save()">Ô cê</button>
+            <!-- <button onclick = "save()">Ô cê</button> -->
+        </div>
+        <div class = "listmember" id = "list-member">
+            <h2>Danh sách thành viên nè:</h2>
+            <table width = "400" border = "1" cellpadding = "0" cellpadding = "0" id = "grid-view-member">
+                
+            </table>
+        </div>
+        <script src = "../js/fMF.js"></script>    
+        <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script> <!--thư viện để xử lí dự liệu dễ tí-->
+    </body>
+</html>
